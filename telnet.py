@@ -61,6 +61,7 @@ def Output(filename,msg):
     with open(filename,"w") as f:
         f.write(msg)
 
+＃　将结果格式化　去除无用的——————ｍｏｒｅ——————　
 def fmt(res):
     if b'  ---- More ----\x1b[16D                \x1b[16D' in res:
         res = res.replace(b'  ---- More ----\x1b[16D                \x1b[16D',b'')
